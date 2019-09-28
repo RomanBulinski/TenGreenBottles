@@ -9,7 +9,7 @@ public class MainKataClass {
         String endPart = "One green bottle hanging on the wall,\n"+
                 "One green bottle hanging on the wall,\n"+
         "If that one green bottle should accidentally fall,\n"+
-        "There'll be no green bottles hanging on the wall.";
+        "There'll be no green bottles hanging on the wall.\n";
 
         String lyricsPart1 = " green bottles hanging on the wall,\n";
         String lyricsPart2 = " green bottles hanging on the wall,\n" +
@@ -22,14 +22,14 @@ public class MainKataClass {
         int counter =0;
         for(int i =0; i<n; i++){
             if(i<n-2){
-                result.append( numbOfBottles[n-counter] ).append(lyricsPart1);;
+                result.append( numbOfBottles[n-counter] ).append(lyricsPart1);
                 result.append( numbOfBottles[n-counter] ).append(lyricsPart2);
                 counter+=1;
                 result.append(numbOfBottles[n-counter].toLowerCase()).append(lyricsPart3);
                 result.append(gap);
             }
             if(i==n-2){
-                result.append( numbOfBottles[n-counter] ).append(lyricsPart1);;
+                result.append( numbOfBottles[n-counter] ).append(lyricsPart1);
                 result.append( numbOfBottles[n-counter] ).append(lyricsPart2);
                 counter+=1;
                 result.append(numbOfBottles[n-counter].toLowerCase()).append(lyricsPart3one);
